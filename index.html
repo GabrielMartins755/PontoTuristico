@@ -1,13 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ponto turistico</title>
+    <title>Turismo em Londrina</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
 </head>
+
 <body>
-    <header>
-        <h1>Londrina</h1>
-    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">LONDRINA <span class="text-success">PR</span></a>
+        </div>
+    </nav>
+
+    <div id="carouselLondrina" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselLondrina" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carouselLondrina" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carouselLondrina" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#carouselLondrina" data-bs-slide-to="3"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="imagens/lago.jpg" class="d-block w-100 img-carousel" alt="Lago Igapó">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="display-4 fw-bold text-white">Lago Igapó</h2>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="imagens/jardimBotanico.jpg" class="d-block w-100 img-carousel" alt="Jardim Botânico">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="display-4 fw-bold text-white">Jardim Botânico</h2>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="imagens/catedral.jpg" class="d-block w-100 img-carousel" alt="Catedral">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="display-4 fw-bold text-white">Catedral Metropolitana</h2>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="imagens/museu.png" class="d-block w-100 img-carousel" alt="Museu">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="display-4 fw-bold text-white">Museu Histórico</h2>
+                </div>
+            </div>
+        </div>
+
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselLondrina" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselLondrina" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <section id="pontos" class="container my-5">
+        <h2 class="text-center mb-4">Pontos Turísticos</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="imagens/lago.jpg" class="card-img-top img-card" alt="Lago Igapó">
+                    <div class="card-body">
+                        <h5 class="card-title">Lago Igapó</h5>
+                        <p class="card-text">Cartão-postal de Londrina, ideal para caminhadas e lazer.</p>
+                        <a href="#" class="btn btn-success">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="imagens/jardimBotanico.jpg" class="card-img-top img-card" alt="Jardim Botânico">
+                    <div class="card-body">
+                        <h5 class="card-title">Jardim Botânico</h5>
+                        <p class="card-text">Área verde incrível para visitas em família.</p>
+                        <a href="#" class="btn btn-success">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="imagens/catedral.jpg" class="card-img-top img-card" alt="Catedral">
+                    <div class="card-body">
+                        <h5 class="card-title">Catedral Metropolitana</h5>
+                        <p class="card-text">Marco arquitetônico no centro da cidade.</p>
+                        <a href="#" class="btn btn-success">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="roteiros" class="container my-5">
+        <h2 class="text-center mb-4">Roteiros Recomendados</h2>
+        <ul class="list-group shadow-sm">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                🌊 Lago Igapó & Orla <span class="badge bg-success">Gratuito</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                🌿 Parque Arthur Thomas <span class="badge bg-success">R$ 5,00</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                🏛️ Centro Histórico & Catedral <span class="badge bg-success">Gratuito</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                🏛️ Museu Histórico de Londrina
+                <span class="badge bg-success">Gratuito</span>
+            </li>
+        </ul>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">© 2026 Londrina Turismo — Paraná, Brasil</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
